@@ -2,21 +2,20 @@ package kata6;
 import java.util.Scanner;
 import java.util.ArrayList;
 import java.util.stream.Collectors;
-import toys.SerialNumberGenerator;
+import business.SerialNumberGenerator;
 import toyproduct.Toy;
-import toyproduct.models.CarToy;
-import toyproduct.models.HelicopterToy;
-import toys.SerialNumberGenerator;
-import toys.ToyBusiness;
+import branches.AmericanToyBusiness;
+import branches.AsianToyBusiness;
+import business.SerialNumberGenerator;
+import business.ToyBusiness;
 
 public class Kata6 {
     
     public static void main(String[] args) {
-        SerialNumberGenerator generator = new SerialNumberGenerator();
         ArrayList<Toy> toys = new ArrayList<>();
-        ToyBusiness business = new ToyBusiness();
         Scanner input = new Scanner(System.in);
         String line = "";
+        ToyBusiness business = new AmericanToyBusiness();
 
         while(!line.equals("exit")) {
             line = input.nextLine();

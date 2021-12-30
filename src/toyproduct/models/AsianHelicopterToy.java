@@ -1,10 +1,10 @@
 package toyproduct.models;
 import toyproduct.Toy;
 
-public class CarToy implements Toy{
+public class AsianHelicopterToy implements Toy{
     final private Integer serialNumber;
-    final String type = "car";
-    public CarToy(Integer serialNumber) {
+    final String type = "helicopter";
+    public AsianHelicopterToy(Integer serialNumber) {
         this.serialNumber = serialNumber;
     }
     @Override
