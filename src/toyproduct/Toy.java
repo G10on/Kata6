@@ -4,4 +4,5 @@ public interface Toy {
     Integer getSerialNumber();
     void pack();
     void label();
+    void prepare();
 }

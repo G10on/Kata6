@@ -1,17 +1,17 @@
 package toyproduct.models;
 import toyproduct.Toy;
 import componentfactories.ComponentFactory;
-import componentfactories.regionalcomponentfactories.AmericanComponentFactory;
+import componentfactories.regionalcomponentfactories.AsianComponentFactory;
 import toyproduct.components.Engine;
 
-public class AmericanSubmarineToy implements Toy {
+public class AsianSubmarineToy implements Toy {
     final private Integer serialNumber;
     final String type = "submarine";
     final ComponentFactory factory;
     private Engine engine;
-    public AmericanSubmarineToy(Integer serialNumber) {
+    public AsianSubmarineToy(Integer serialNumber) {
         this.serialNumber = serialNumber;
-        this.factory = new AmericanComponentFactory();
+        this.factory = new AsianComponentFactory();
     }
     @Override
     public Integer getSerialNumber() {
@@ -27,7 +27,7 @@ public class AmericanSubmarineToy implements Toy {
     }
     @Override 
     public String toString() {
-        return "AmericanSubmarineToy{" + "serialNumber=" + serialNumber + '}';
+        return "AsianSubmarineToy{" + "serialNumber=" + serialNumber + '}';
     }
     @Override
     public void prepare() {
